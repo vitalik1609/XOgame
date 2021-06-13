@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>КРЕСТИКИ-НОЛИКИ</title>
+	 
+    <link rel="stylesheet" href="style.css">
+	  <style type="text/css">
+   #content {
+    width: 500px; /* Ширина слоя */
+    margin: 0 auto 50px; /* Выравнивание по центру */
+   }
+   #footer {
+    position: fixed; /* Фиксированное положение */
+    left: 500; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #FFEBCD; /* Цвет фона */
+    color: #A52A2A; /* Цвет текста */
+    width: 80%; /* Ширина слоя */
+	margin: 0 auto 50px;
+	
+   }
+  </style>
+</head>
+<body bgcolor=#FFEBCD>
+
+
+ <div id="footer">
+   <br/><h1>ПРАВИЛА ИГРЫ</h1>
+   <br/><h3>Вы начинаете игру за "О"</h3>
+ <br/><h3>Первый, выстроивший в ряд 3 своих фигуры по вертикали, горизонтали или диагонали, выигрывает.</h3>
+</font>
+  </div>
+  <table>
+    <tr>
+      <td class="cell" id="0"></td>
+      <td class="cell" id="1"></td>
+      <td class="cell" id="2"></td>
+    </tr>
+    <tr>
+      <td class="cell" id="3"></td>
+      <td class="cell" id="4"></td>
+      <td class="cell" id="5"></td>
+    </tr>
+    <tr>
+      <td class="cell" id="6"></td>
+      <td class="cell" id="7"></td>
+      <td class="cell" id="8"></td>
+    </tr>
+  </table>
+   
+  <div class="endgame">
+    <div class="text"></div>
+    <button onClick="startGame()">Новая игра  </button>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
